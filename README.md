@@ -2,8 +2,7 @@
 
 A Command Line Tool to create jwc.js project
 
-<img width="497" alt="preview" src="https://user-images.githubusercontent.com/62133302/208607255-6d8bbe15-bb70-4b41-803b-75ddb93455cb.png">
-
+<img width="590" alt="preview" src="https://user-images.githubusercontent.com/62133302/208615749-dd6627af-e436-4cdb-aced-a1372b7f953a.png">
 
 ## License
 
