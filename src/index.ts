@@ -217,10 +217,10 @@ async function init() {
 	);
 	pkg.name = packageName || getProjectName();
 	write("package.json", JSON.stringify(pkg, null, 2));
-	console.log(`\n${green("✔")} Created project in ${root}.`);
+	console.log(`${green("✔")} Created project in ${root}.`);
 	if (root !== cwd) {
-		console.log(`\n${green("✔")} To get started:`);
-		console.log(`\n  cd ${dir}`);
+		console.log(`${green("✔")} To get started:`);
+		console.log(`  cd ${dir}`);
 	}
 	switch (packageManager) {
 		case "yarn":
