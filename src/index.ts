@@ -78,16 +78,6 @@ function emptyDir(dir: string) {
 	}
 }
 
-function pkgFromUserAgent(userAgent: string | undefined) {
-	if (!userAgent) return undefined;
-	const pkgSpec = userAgent.split(" ")[0];
-	const pkgSpecArr = pkgSpec.split("/");
-	return {
-		name: pkgSpecArr[0],
-		version: pkgSpecArr[1],
-	};
-}
-
 const defaultTargetDir = "my-jwc-app";
 
 const renameFiles: Record<string, string | undefined> = {
@@ -175,9 +165,9 @@ async function init() {
 						{
 							title: "pnpm",
 							value: "pnpm",
-						}
+						},
 					],
-				}
+				},
 			],
 			{
 				onCancel: () => {
@@ -190,7 +180,12 @@ async function init() {
 		process.exit(1);
 	}
 
-	const { template: userTemplate, overwrite, packageName, packageManager } = result;
+	const {
+		template: userTemplate,
+		overwrite,
+		packageName,
+		packageManager,
+	} = result;
 	const root = path.join(cwd, dir);
 
 	if (overwrite) {
