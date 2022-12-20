@@ -1,7 +1,7 @@
 {
   "name": "create-jwc",
   "version": "0.0.0",
-  "description": "",
+  "description": "A Command Line Tool to create jwc.js project",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -13,7 +13,18 @@
   "keywords": [
     "jwcjs"
   ],
-  "author": "JwcJS",
+  "author": "wibus-wee <wibus@qq.com>",
+  "bugs": {
+    "url": "https://github.com/jwcjs/create-jwc/issues"
+  },
+  "homepage": "https://github.com/jwcjs/create-jwc#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwcjs/create-jwc.git"
+  },
+  "bin": {
+    "create-jwc": "index.js"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/minimist": "^1.2.2",
