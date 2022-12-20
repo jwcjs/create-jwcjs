@@ -158,6 +158,26 @@ async function init() {
 						};
 					}),
 				},
+				{
+					type: "select",
+					name: "packageManager",
+					message: reset("Select a package manager:"),
+					initial: 0,
+					choices: [
+						{
+							title: "npm",
+							value: "npm",
+						},
+						{
+							title: "yarn",
+							value: "yarn",
+						},
+						{
+							title: "pnpm",
+							value: "pnpm",
+						}
+					],
+				}
 			],
 			{
 				onCancel: () => {
@@ -170,7 +190,7 @@ async function init() {
 		process.exit(1);
 	}
 
-	const { template: userTemplate, overwrite, packageName } = result;
+	const { template: userTemplate, overwrite, packageName, packageManager } = result;
 	const root = path.join(cwd, dir);
 
 	if (overwrite) {
@@ -178,9 +198,6 @@ async function init() {
 	} else if (!fs.existsSync(root)) {
 		fs.mkdirSync(root, { recursive: true });
 	}
-
-	const pkginfo = pkgFromUserAgent(process.env.npm_config_user_agent);
-	const manager = pkginfo ? pkginfo.name : "npm";
 
 	const templateDir = path.resolve(
 		fileURLToPath(import.meta.url),
@@ -208,16 +225,16 @@ async function init() {
 	console.log(`\n${green("✔")} Created project in ${root}.`);
 	if (root !== cwd) {
 		console.log(`\n${green("✔")} To get started:`);
-		console.log(`\n  cd ${root}`);
+		console.log(`\n  cd ${dir}`);
 	}
-	switch (manager) {
+	switch (packageManager) {
 		case "yarn":
 			console.log(`  yarn`);
 			console.log(`  yarn dev`);
 			break;
 		default:
-			console.log(`  ${manager} install`);
-			console.log(`  ${manager} run dev`);
+			console.log(`  ${packageManager} install`);
+			console.log(`  ${packageManager} run dev`);
 			break;
 	}
 	console.log();
