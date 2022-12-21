@@ -10,7 +10,8 @@
 		"typecheck": "tsc --noEmit",
 		"prepublishOnly": "npm run build",
 		"lint": "eslint .",
-		"lint-staged": "lint-staged"
+		"lint-staged": "lint-staged",
+		"release": "vv"
 	},
 	"husky": {
 		"hooks": {
