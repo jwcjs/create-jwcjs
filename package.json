@@ -34,6 +34,7 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
+		"@innei/bump-version": "^1.5.4",
 		"@types/minimist": "^1.2.2",
 		"@types/node": "^18.11.17",
 		"@types/prompts": "^2.4.2",
@@ -57,6 +58,16 @@
 	"lint-staged": {
 		"*.{js,ts,css,json}": [
 			"prettier --write"
+		]
+	},
+	"bump": {
+		"leading": [
+			"git pull --rebase"
+		],
+		"publish": false,
+		"changelog": true,
+		"allowed_branches": [
+			"main"
 		]
 	}
 }
