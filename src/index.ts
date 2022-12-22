@@ -196,7 +196,7 @@ async function init() {
 
 	const templateDir = path.resolve(
 		fileURLToPath(import.meta.url),
-		"../../",
+		"../../templates",
 		userTemplate.name
 	);
 
@@ -219,7 +219,7 @@ async function init() {
 	write("package.json", JSON.stringify(pkg, null, 2));
 	console.log(`${green("✔")} Created project in ${root}.`);
 	if (root !== cwd) {
-		console.log(`${green("✔")} To get started:`);
+		console.log(`\n${green("✔")} To get started: \n`);
 		console.log(`  cd ${dir}`);
 	}
 	switch (packageManager) {
