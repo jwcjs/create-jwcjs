@@ -65,7 +65,7 @@
 		"leading": [
 			"git pull --rebase"
 		],
-		"publish": false,
+		"publish": true,
 		"changelog": true,
 		"allowed_branches": [
 			"main"
