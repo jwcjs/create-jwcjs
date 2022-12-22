@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# [0.1.0-alpha.2](https://github.com/jwcjs/create-jwc/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2022-12-22)
+
+
+
 # [0.1.0-alpha.1](https://github.com/jwcjs/create-jwc/compare/v0.1.0-alpha.0...v0.1.0-alpha.1) (2022-12-22)
 
 
