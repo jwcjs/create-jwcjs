@@ -1,6 +1,6 @@
 {
   "name": "create-jwcjs",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "description": "A Command Line Tool to create jwc.js project",
   "main": "index.js",
   "type": "module",

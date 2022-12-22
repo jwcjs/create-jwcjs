@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# [0.1.0-alpha.4](https://github.com/jwcjs/create-jwcjs/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2022-12-22)
+
+
+### Bug Fixes
+
+* configure jsx in template ([2c7a433](https://github.com/jwcjs/create-jwcjs/commit/2c7a433091110dd742e00beb3cfa805543b68c23))
+
+
+
 # [0.1.0-alpha.3](https://github.com/jwcjs/create-jwcjs/compare/v0.1.0-alpha.2...v0.1.0-alpha.3) (2022-12-22)
 
 
