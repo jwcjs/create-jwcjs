@@ -18,6 +18,9 @@
 		"target": "ES6",
 		"noImplicitReturns": true,
 		"noUnusedLocals": true,
-		"noUnusedParameters": false
+		"noUnusedParameters": false,
+		"jsx": "react",
+		"jsxFactory": "h",
+		"jsxFragmentFactory": "Fragment"
 	}
 }
